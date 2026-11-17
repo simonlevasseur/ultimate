@@ -5,8 +5,8 @@ messages, and shows what optional extensions provide through points (`conversati
 Its UI state keeps the keys it had as part of conversations (`ext.conversations.*`).
 Rows under @ultimate's come from the `sidebar.under-ultimate` point (`ui.tsx`; side-chat fills it with open side
 chats). Rows under a standing agent's row in the Agents group come from the `sidebar.under-agent` point, keyed by the
-agent's name (`lander`, or its definition's `name`, such as `shopify-lander`): an extension that owns work for that
-agent (its open pull requests, say) lists it there, below the lander's Landed section, and returns null for other
+agent's name (`lander`, or its definition's `name`, such as `triage`): an extension that tracks work for that
+agent lists it there, below the lander's Landed section, and returns null for other
 agents; with no provider nothing is drawn. The conversations the `sidebar.unlisted` point names (side-chat names every side chat) are left out of every
 other list (`listed.ts`).
 

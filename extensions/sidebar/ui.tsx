@@ -13,7 +13,7 @@ export const UnderUltimate = definePoint<ConversationId | undefined, ReactNode>(
 /**
  * Rows nested under a standing agent's row in the Agents group (below the lander's Landed section); several extensions
  * may provide it and their rows show in discovery order. Input is the agent's name (`lander`, or its definition's
- * `name`, `shopify-lander`); a provider returns null for agents it does not serve.
+ * `name`, such as `triage`); a provider returns null for agents it does not serve.
  */
 export const UnderAgent = definePoint<string, ReactNode>('sidebar.under-agent')
 /**
